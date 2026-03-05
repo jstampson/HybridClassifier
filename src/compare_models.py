@@ -86,7 +86,9 @@ def main():
     EPOCHS = 5 # Reduced for quicker comparison
     LR = 0.005
     
-    train_loader, val_loader, test_loader = get_binary_mnist_dataloaders(batch_size=BATCH_SIZE)
+    train_loader, val_loader, test_loader = get_binary_mnist_dataloaders(
+        data_dir="data", batch_size=BATCH_SIZE
+    )
     
     # Train Hybrid
     hybrid_model = HybridModel(n_layers=3)

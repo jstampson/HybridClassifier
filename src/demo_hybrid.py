@@ -6,7 +6,7 @@ def demo_hybrid():
     print("--- Hybrid Model Demonstration ---")
     
     # 1. Setup DataLoader
-    train_loader, _ = get_binary_mnist_dataloaders(data_dir='data', batch_size=4)
+    train_loader, _, _ = get_binary_mnist_dataloaders(data_dir='data', batch_size=4)
     images, labels = next(iter(train_loader))
     
     # 2. Initialize Model

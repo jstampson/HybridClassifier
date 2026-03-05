@@ -6,7 +6,7 @@ import math
 def demo_squeezer():
     # 1. Setup Data Loader
     print("--- Squeezer Demonstration ---")
-    train_loader, _ = get_binary_mnist_dataloaders(data_dir='data', batch_size=1)
+    train_loader, _, _ = get_binary_mnist_dataloaders(data_dir='data', batch_size=1)
     
     # 2. Extract exactly one sample
     image, label = next(iter(train_loader))
